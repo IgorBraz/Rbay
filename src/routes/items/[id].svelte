@@ -89,7 +89,7 @@
 					<Stat
 						bg="bg-violet-500"
 						label="Ending In"
-						value={DateTime.fromMillis(item.endingAt).toRelative().replace('in ', '')}
+						value={item.endingAt.toRelative().replace('in ', '')}
 					/>
 				</div>
 

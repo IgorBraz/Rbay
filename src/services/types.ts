@@ -6,8 +6,8 @@ export interface Item {
 	ownerId: string;
 	imageUrl: string;
 	description: string;
-	createdAt: number;
-	endingAt: number;
+	createdAt: DateTime;
+	endingAt: DateTime;
 	views: number;
 	likes: number;
 	price: number;
