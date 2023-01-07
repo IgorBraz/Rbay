@@ -4,7 +4,6 @@ import { client } from '$services/redis';
 import { debug } from 'svelte/internal';
 
 export const getSession = async (id: string) => {
-    debug;
     const session = await client.hGetAll(sessionsKey(id));
 
     if (Object.keys(session).length === 0) {

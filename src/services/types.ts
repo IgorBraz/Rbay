@@ -1,3 +1,5 @@
+import type { DateTime } from "luxon";
+
 export interface Item {
 	id: string;
 	name: string;
@@ -17,7 +19,14 @@ export interface CreateItemAttrs {
 	name: string;
 	imageUrl: string;
 	description: string;
-	duration: number;
+	createdAt: DateTime;
+	endingAt: DateTime;
+	ownerId: string;
+	highestBidUserId: string;
+	price: number;
+	views: number;
+	likes: number;
+	bids: number;
 }
 
 export interface User {
